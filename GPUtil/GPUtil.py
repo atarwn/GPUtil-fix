@@ -40,7 +40,7 @@ import sys
 import platform
 
 
-__version__ = '1.4.1'
+__version__ = '1.4.2'
 
 class GPU:
     def __init__(self, ID, uuid, load, memoryTotal, memoryUsed, memoryFree, driver, gpu_name, serial, display_mode, display_active, temp_gpu):
@@ -70,7 +70,7 @@ def getGPUs():
         # If the platform is Windows and nvidia-smi 
         # could not be found from the environment path, 
         # try to find it from system drive with default installation path
-        nvidia_smi = spawn.find_executable('nvidia-smi')
+        nvidia_smi = shutil.which('nvidia-smi')
         if nvidia_smi is None:
             nvidia_smi = "%s\\Program Files\\NVIDIA Corporation\\NVSMI\\nvidia-smi.exe" % os.environ['systemdrive']
     else:
