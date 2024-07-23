@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='GPUtil-fix',
-    version='1.4.2',
+    version='1.4.1.2',
     description='Utility to get the GPU status from NVIDA GPUs using nvidia-smi',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
