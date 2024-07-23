@@ -31,7 +31,7 @@
 # SOFTWARE.
 
 from subprocess import Popen, PIPE
-from distutils import spawn
+from shutil import spawn
 import os
 import math
 import random
@@ -40,7 +40,7 @@ import sys
 import platform
 
 
-__version__ = '1.4.0'
+__version__ = '1.4.1'
 
 class GPU:
     def __init__(self, ID, uuid, load, memoryTotal, memoryUsed, memoryFree, driver, gpu_name, serial, display_mode, display_active, temp_gpu):
