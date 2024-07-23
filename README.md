@@ -1,4 +1,18 @@
-# GPUtil
+# GPUtil-fix
+
+> [!IMPORTANT]
+> This fork exists because I urgently needed a working version of the GPUtil module compatible with Python 3.12. The original author has not updated the code for several years, and the latest pull request fixing this issue has not been reviewed. Therefore, I created this fork to ensure continued functionality.
+>
+> A big thank you to [@MagicalTux](https://github.com/MagicalTux) for providing the fix.
+>
+> You can install this updated version via pip:
+>
+> ```bash
+> pip install GPUtil-fix
+> ```
+
+# Original description
+
 `GPUtil` is a Python module for getting the GPU status from NVIDA GPUs using `nvidia-smi`.
 `GPUtil` locates all GPUs on the computer, determines their availablity and returns a ordered list of available GPUs.
 Availablity is based upon the current memory consumption and load of each GPU.
@@ -25,7 +39,7 @@ Supports both Python 2.X and 3.X.
 
 Python libraries:
 * subprocess ([The Python Standard Library](https://docs.python.org/3/library/subprocess.html))
-* distutils ([The Python Standard Library](https://docs.python.org/3/library/distutils.html))
+* shutil ([The Python Standard Library](https://docs.python.org/3/library/shutil.html))
 * math ([The Python Standard Library](https://docs.python.org/3/library/math.html))
 * random ([The Python Standard Library](https://docs.python.org/3/library/random.html))
 * time ([The Python Standard Library](https://docs.python.org/3/library/time.html))
